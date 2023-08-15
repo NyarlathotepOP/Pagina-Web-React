@@ -1,9 +1,10 @@
 import React from 'react';
+import './header.css';
 
 function Header() {
   return (
-    <header style={{ textAlign: 'left' }}>
-      <a href="#" className="logo">Sport Elite</a>
+    <header className='logo'>
+      <a>Sport Elite</a>
     </header>
   );
 }
