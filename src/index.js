@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Header from './Header/header';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('footer'));
+const root = ReactDOM.createRoot(document.getElementById('header'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <img className='image-1'></img>
+    <img className='image-2'></img>
   </React.StrictMode>
 );
 
