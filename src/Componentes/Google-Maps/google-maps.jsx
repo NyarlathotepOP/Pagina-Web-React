@@ -1,5 +1,3 @@
-/* AIzaSyDXOadHmXXpcNJC0myyFeoAeplTRVQzSWA*/
-
 import React from "react";
 import { GoogleMap, MarkerF, LoadScript } from '@react-google-maps/api';
 
@@ -20,7 +18,7 @@ export default function Map() {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDXOadHmXXpcNJC0myyFeoAeplTRVQzSWA">
+    <LoadScript googleMapsApiKey="API_KEY">
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={defaultCenter}
