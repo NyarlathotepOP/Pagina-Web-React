@@ -1,10 +1,9 @@
-import React from 'react';
 import './header.css';
 
 function Header() {
   return (
     <header className='logo'>
-      <a>Sport Elite</a>
+      <h1>Sport Elite</h1>
     </header>
   );
 }
