@@ -1,10 +1,11 @@
 import React from "react";
 import { GoogleMap, MarkerF, LoadScript } from '@react-google-maps/api';
-import { API_KEY } from "./API_KEY.env";
+
+const API_KEY = process.env.API_KEY;
 export default function Map() {
   const mapContainerStyle = {
-    width: '40%',
-    height: '40vh'
+    width: '100%',
+    height: '320px'
   };
 
   const defaultCenter = {

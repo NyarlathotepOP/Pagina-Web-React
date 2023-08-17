@@ -1,5 +1,99 @@
-.logo{
-    font-size: 23px;
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 75px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 40px;
     color: #121212;
     font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .cuentas ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 600;
+    color: #121212;
+    display: block;
+}
+
+.menu .cuentas ul li a {
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 600;
+    color: #121212;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #1976D2;
+}
+
+.menu .cuentas ul li a:hover {
+    color: #1976D2;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.header-txt {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.header-txt h1 {
+    font-size: 33px;
+    line-height: 60px;
+    color: #121212;
+}
+
+.header-txt p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #121212;
+    margin-bottom: 20px;
+}
+
+.header-txt span {
+    color: #121212;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 30px;
+    background-color: #1976D2;
+    font-size: 16px;
+    color: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:hover {
+    background-color: #212121;
 }

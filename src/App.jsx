@@ -1,18 +1,15 @@
 import React from 'react';
 import './index.css';
 import Header from './Componentes/Header/header';
-import Map from './Componentes/Google-Maps/google-maps'
+import Footer from './Componentes/Footer/footer';
 
-function App() {
+export default function App() {
     return (
-        <div>
+        <main className='container'>
             <img className='image-1'></img>
             <img className='image-2'></img>
             <Header />
-            <Map />
-        </div>
-
+            <Footer />
+        </main>
     )
 }
-
-export default App;
