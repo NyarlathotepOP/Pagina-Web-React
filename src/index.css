@@ -10,12 +10,15 @@
 
 body {
   font-family: 'Roboto Serif', serif;
+}
+
+.container {
   max-width: 1300px;
   margin: 0 auto;
 }
 
 .image-1 {
-  background-image: url('./Images/head.jpg');
+  background-image: url('./Componentes/Images/head.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -28,7 +31,7 @@ body {
 }
 
 .image-2 {
-  background-image: url('./Images/head-2.jpg');
+  background-image: url('./Componentes/Images/head-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
