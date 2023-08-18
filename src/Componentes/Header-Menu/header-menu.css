@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 75px 0;
+    padding: 35px 0;
 }
 
 .menu {
@@ -54,46 +54,4 @@
 
 .menu .cuentas ul li a:hover {
     color: #1976D2;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    padding: 100px 0;
-}
-
-.header-txt {
-    width: 50%;
-    margin-right: 5px;
-}
-
-.header-txt h1 {
-    font-size: 33px;
-    line-height: 60px;
-    color: #121212;
-}
-
-.header-txt p {
-    font-size: 20px;
-    font-weight: 500;
-    color: #121212;
-    margin-bottom: 20px;
-}
-
-.header-txt span {
-    color: #121212;
-}
-
-.btn-1 {
-    display: inline-block;
-    padding: 15px 45px;
-    border-radius: 30px;
-    background-color: #1976D2;
-    font-size: 16px;
-    color: #FFF;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn-1:hover {
-    background-color: #212121;
 }

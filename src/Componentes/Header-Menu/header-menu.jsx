@@ -1,5 +1,5 @@
 import React from "react";
-import './header.css';
+import './header-menu.css';
 
 export default function Header() {
   return (
@@ -21,16 +21,6 @@ export default function Header() {
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
-      </div>
-      <div className="header-content container">
-        <div className="header-txt">
-          <h1><span>¡Bienvenido a la mejor tienda de artículos deportivos!</span></h1>
-          <p>Explora nuestras categorías cuidadosamente seleccionadas, desde
-            ropa deportiva de última moda hasta equipos especializados para deportes específicos.
-            Nuestra misión es proporcionarte productos que te ayuden a rendir al máximo y disfrutar
-            al máximo de tu actividad física.</p>
-          <a href="#" className="btn-1">Informacion</a>
-        </div>
       </div>
     </header>
   );
