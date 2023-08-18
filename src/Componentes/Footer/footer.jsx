@@ -1,7 +1,7 @@
-import FacebookIcon from "../Images/bxl-facebook-square.svg";
-import InstagramIcon from "../Images/bxl-instagram.svg";
-import TelegramIcon from "../Images/bxl-telegram.svg";
-import TwitterIcon from "../Images/bxl-twitter.svg";
+import FacebookIcon from "../../Images/bxl-facebook-square.svg";
+import InstagramIcon from "../../Images/bxl-instagram.svg";
+import TelegramIcon from "../../Images/bxl-telegram.svg";
+import TwitterIcon from "../../Images/bxl-twitter.svg";
 import React from "react";
 import './footer.css';
 import Map from "../Google-Maps/google-maps";
@@ -43,10 +43,10 @@ export default function Footer() {
                     </div>
 
                     <div className="link">
-                        <img src={FacebookIcon} alt="" />
-                        <img src={InstagramIcon} alt="" />
-                        <img src={TelegramIcon} alt="" />
-                        <img src={TwitterIcon} alt="" />
+                        <img src={FacebookIcon} alt="Facebook" />
+                        <img src={InstagramIcon} alt="Instagram" />
+                        <img src={TelegramIcon} alt="Telegram" />
+                        <img src={TwitterIcon} alt="Twitter" />
                     </div>
                 </div>
 
