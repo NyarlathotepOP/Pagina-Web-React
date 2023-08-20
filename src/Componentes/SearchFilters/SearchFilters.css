@@ -1,14 +1,13 @@
 .search-filters {
-  display: inline-block;
+  display: block; 
   background-color: #f5f5f5;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 50%; 
-  margin: 10px 0;
+  width: 30%;
+  margin: 10px left; 
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  vertical-align: top;
 }
 
 .search-filters h3 {
