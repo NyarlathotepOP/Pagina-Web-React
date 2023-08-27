@@ -6,56 +6,64 @@ import React from "react";
 import './footer.css';
 import Map from "../Google-Maps/google-maps";
 
+const footerSections = [
+  {
+    title: 'Comunidad',
+    links: [
+      { label: 'Codigo de conducta', href: '#' },
+      { label: 'Conoce al equipo', href: '#' },
+      { label: 'Colaboradores', href: '#' },
+      { label: 'Agradecimientos', href: '#' }
+    ]
+  },
+  {
+    title: 'Proyectos',
+    links: [
+      { label: 'Estado', href: '#' },
+      { label: 'Mision', href: '#' },
+      { label: 'Vision', href: '#' },
+      { label: 'PQR', href: '#' }
+    ]
+  },
+  {
+    title: 'Sedes',
+    links: [
+      { label: 'Bogota', href: '#' },
+      { label: 'Cali', href: '#' },
+      { label: 'Medellin', href: '#' },
+      { label: 'Valledupar', href: '#' }
+    ]
+  }
+];
+
 export default function Footer() {
-    return (
-        <footer className='footer'>
-            <div className="footer-content container">
-                <div className="links">
-                    <div className="link">
-                        <h3>Comunidad</h3>
-                        <ul>
-                            <li><a href="#">Codigo de conducta</a></li>
-                            <li><a href="#">Conoce al equipo</a></li>
-                            <li><a href="#">Colaboradores</a></li>
-                            <li><a href="#">Agradecimientos</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div className="link">
-                        <h3>Proyectos</h3>
-                        <ul>
-                            <li><a href="#">Estado</a></li>
-                            <li><a href="#">Mision</a></li>
-                            <li><a href="#">Vision</a></li>
-                            <li><a href="#">PQR</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="link">
-                        <h3>Sedes</h3>
-                        <ul>
-                            <li><a href="#">Bogota</a></li>
-                            <li><a href="#">Cali</a></li>
-                            <li><a href="#">Medellin</a></li>
-                            <li><a href="#">Valledupar</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="link">
-                        <img src={FacebookIcon} alt="Facebook" />
-                        <img src={InstagramIcon} alt="Instagram" />
-                        <img src={TelegramIcon} alt="Telegram" />
-                        <img src={TwitterIcon} alt="Twitter" />
-                    </div>
-                </div>
-
-                <div className="footer-map">
-                    <Map />
-                </div>
-
+  return (
+    <footer className='footer'>
+      <div className="footer-content container">
+        <div className="links">
+          {footerSections.map((section, index) => (
+            <div className="link" key={index}>
+              <h3>{section.title}</h3>
+              <ul>
+                {section.links.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))}
+              </ul>
             </div>
-
-        </footer>
-    );
+          ))}
+          <div className="link">
+            <img src={FacebookIcon} alt="Facebook" />
+            <img src={InstagramIcon} alt="Instagram" />
+            <img src={TelegramIcon} alt="Telegram" />
+            <img src={TwitterIcon} alt="Twitter" />
+          </div>
+        </div>
+        <div className="footer-map">
+          <Map />
+        </div>
+      </div>
+    </footer>
+  );
 }
