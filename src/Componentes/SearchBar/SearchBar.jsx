@@ -15,6 +15,7 @@ function SearchBar() {
   };
 
   return (
+    <section className='search-container'>
     <div className="search-bar">
       <form onSubmit={handleSearchSubmit}>
         <input
@@ -26,6 +27,7 @@ function SearchBar() {
         <button type="submit">Buscar</button>
       </form>
     </div>
+    </section>
   );
 }
 

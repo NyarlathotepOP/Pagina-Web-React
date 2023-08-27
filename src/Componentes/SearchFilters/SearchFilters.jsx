@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SearchFilters.css';
+import SearchBar from "../SearchBar/SearchBar";
 
 function SearchFilters() {
   const [category, setCategory] = useState('todos');
@@ -19,24 +20,35 @@ function SearchFilters() {
   };
 
   return (
-    <div className="search-filters">
-      <h3>Filtros Avanzados</h3>
-      <label>Categoría:</label>
-      <select value={category} onChange={handleCategoryChange}>
-        <option value="todos">Todos</option>
-        <option value="ropa">Ropa</option>
-        <option value="calzado">Calzado</option>
-        <option value="accesorios">Accesorios</option>
-      </select>
-      <label>Rango de Precio:</label>
-      <select value={priceRange} onChange={handlePriceRangeChange}>
-        <option value="cualquier_precio">Cualquier Precio</option>
-        <option value="bajo">Bajo</option>
-        <option value="medio">Medio</option>
-        <option value="alto">Alto</option>
-      </select>
-      <button onClick={handleApplyFilters}>Aplicar Filtros</button>
-    </div>
+    <section>
+      <div className="search-filters">
+        <h3>Filtros Avanzados</h3>
+        <div className="filter-row">
+          <div className="filter-item">
+            <label>Categoría:</label>
+            <select value={category} onChange={handleCategoryChange}>
+              <option value="todos">Todos</option>
+              <option value="ropa">Ropa</option>
+              <option value="calzado">Calzado</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+          </div>
+          <div className="filter-item">
+            <label>Rango de Precio:</label>
+            <select value={priceRange} onChange={handlePriceRangeChange}>
+              <option value="cualquier_precio">Cualquier Precio</option>
+              <option value="bajo">Bajo</option>
+              <option value="medio">Medio</option>
+              <option value="alto">Alto</option>
+            </select>
+          </div>
+        </div>
+        <button onClick={handleApplyFilters}>Aplicar Filtros</button>
+      </div>
+      <div className='search'>
+        <SearchBar />
+      </div>
+    </section>
   );
 }
 
