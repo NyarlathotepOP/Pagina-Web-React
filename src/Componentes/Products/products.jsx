@@ -15,7 +15,6 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Perfectas para el deporte",
             price: "725.000",
-            id: 1
         },
         {
             image: Producto2,
@@ -23,7 +22,6 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Construcción duradera y de alta calidad para un uso prolongado.",
             price: "100.000",
-            id: 2
         },
         {
             image: Producto3,
@@ -31,7 +29,6 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Alta durabilidad",
             price: "45.000",
-            id: 3
         },
         {
             image: Producto4,
@@ -39,7 +36,6 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Son calzado diseñado para actividades físicas. Hechas con materiales duraderos y transpirables.",
             price: "125.000",
-            id: 4
         },
         {
             image: Producto5,
@@ -47,14 +43,13 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Diseñada para actividades físicas y deportivas, hecha de materiales ligeros y transpirables.",
             price: "95.000",
-            id: 5
         }
     ];
 
     return (
         <section className="products container">
             <h2>Productos</h2>
-            <div className="box-container" id="lista-1">
+            <div className="box-container">
                 {products.slice(0, productShow).map((product) => (
                     <div className="box">
                         <img src={product.image} alt={product.name} />
@@ -63,7 +58,7 @@ export default function Products() {
                             <p>{product.brand}</p>
                             {product.description && <p>{product.description}</p>}
                             <p className="precio">{product.price}</p>
-                            <button className="agregar-carrito btn-3" data-id={product.id} onClick={(e) => e.preventDefault()}>Agregar al carrito</button>
+                            <button className="agregar-carrito btn-3" onClick={(e) => e.preventDefault()}>Agregar al carrito</button>
                         </div>
                     </div>
                 ))}
