@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SearchFilters.css';
 import SearchBar from "../SearchBar/SearchBar";
 
 function SearchFilters() {
-  const [category, setCategory] = useState('todos');
-  const [priceRange, setPriceRange] = useState('cualquier_precio');
+  const [category, setCategory] = useState('');
+  const [priceRange, setPriceRange] = useState('');
+
+  const [categories, setCategories] = useState([]);
+  const [priceRanges, setPriceRanges] = useState([]);
+
+  useEffect(() => {
+    const fetchedCategories = ['Todo', 'Ropa', 'Calzado', 'Accesorios'];
+    setCategories(fetchedCategories);
+
+    const fetchedPriceRanges = ['Cualquier Precio', 'Bajo', 'Medio', 'Alto'];
+    setPriceRanges(fetchedPriceRanges);
+  }, []);
 
   const handleCategoryChange = (event) => {
     setCategory(event.target.value);
@@ -27,19 +38,17 @@ function SearchFilters() {
           <div className="filter-item">
             <label>Categoría:</label>
             <select value={category} onChange={handleCategoryChange}>
-              <option value="todos">Todos</option>
-              <option value="ropa">Ropa</option>
-              <option value="calzado">Calzado</option>
-              <option value="accesorios">Accesorios</option>
+              {categories.map((category) => (
+                <option key={category} value={category}>{category}</option>
+              ))}
             </select>
           </div>
           <div className="filter-item">
             <label>Rango de Precio:</label>
             <select value={priceRange} onChange={handlePriceRangeChange}>
-              <option value="cualquier_precio">Cualquier Precio</option>
-              <option value="bajo">Bajo</option>
-              <option value="medio">Medio</option>
-              <option value="alto">Alto</option>
+              {priceRanges.map((priceRange) => (
+                <option key={priceRange} value={priceRange}>{priceRange}</option>
+              ))}
             </select>
           </div>
         </div>
