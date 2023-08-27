@@ -1,0 +1,39 @@
+.ropa {
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 55px;
+    color: #121212;
+    margin-bottom: 20px;
+}
+
+.ropa-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ropa-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1976D2;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.ropa-1 h3 {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.ropa-1 img {
+    width: 180px;
+}

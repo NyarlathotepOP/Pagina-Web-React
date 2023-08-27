@@ -1,10 +1,13 @@
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .search-bar {
   text-align: center;
-  margin-top: 20px;
+  margin-top: -98px;
   margin-bottom: 20px;
-  width: 30%; 
-  display: inline-block;
-  vertical-align: top;
+  width: 50%;
 }
 
 .search-bar input {
@@ -18,7 +21,7 @@
 
 .search-bar button {
   margin-top: 10px;
-  padding: 8px 16px;
+  padding: 8px 36px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -27,4 +30,3 @@
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-

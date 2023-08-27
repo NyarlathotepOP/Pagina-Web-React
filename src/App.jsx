@@ -3,8 +3,8 @@ import './index.css';
 import Header from './Componentes/Header-Menu/header-menu';
 import Footer from './Componentes/Footer/footer';
 import SectionContent from './Componentes/Section-Content/section-content';
-import SearchBar from './Componentes/SearchBar/SearchBar'; // Se importa el componente
-import SearchFilters from './Componentes/SearchFilters/SearchFilters'; // Importa el componente de filtros
+import SearchFilters from './Componentes/SearchFilters/SearchFilters';
+import SectionProducts from './Componentes/Section-Products/Section-Products';
 
 export default function App() {
     return (
@@ -12,9 +12,9 @@ export default function App() {
             <img className='image-1'></img>
             <img className='image-2'></img>
             <Header />
-            <SearchBar /> {/* Se agrega el componente de búsqueda */}
-            <SearchFilters /> {/* Agrega el componente de filtros */}
             <SectionContent/>
+            <SearchFilters />
+            <SectionProducts />
             <Footer />
         </main>
     )
