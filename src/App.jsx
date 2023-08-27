@@ -4,6 +4,7 @@ import Header from './Componentes/Header-Menu/header-menu';
 import Footer from './Componentes/Footer/footer';
 import SectionContent from './Componentes/Section-Content/section-content';
 import SearchFilters from './Componentes/SearchFilters/SearchFilters';
+import SectionProducts from './Componentes/Section-Products/Section-Products';
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
             <Header />
             <SectionContent/>
             <SearchFilters />
+            <SectionProducts />
             <Footer />
         </main>
     )
