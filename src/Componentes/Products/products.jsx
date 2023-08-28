@@ -5,6 +5,10 @@ import Producto2 from '../../Images/MANCUERNAS20KG.jpg'
 import Producto3 from '../../Images/kettlebell.jpg'
 import Producto4 from '../../Images/Zapatilla.png'
 import Producto5 from '../../Images/Camiseta azul.jpg'
+import Producto6 from '../../Images/BalonFutbol.jpg'
+import Producto7 from '../../Images/GuantesBoxeo.jpg'
+import Producto8 from '../../Images/RaquetaTenis.jpg'
+
 
 export default function Products() {
     const [productShow, setProductsShow] = useState(4);
@@ -13,7 +17,7 @@ export default function Products() {
             image: Producto1,
             name: "Discos Olimpicos",
             brand: "Sport Elite",
-            description: "Perfectas para el deporte",
+            description: "Perfectos para el gimnasio",
             price: "725.000",
         },
         {
@@ -43,6 +47,27 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Diseñada para actividades físicas y deportivas, hecha de materiales ligeros y transpirables.",
             price: "95.000",
+        },
+        {
+            image: Producto6,
+            name: "Balón de fútbol",
+            brand: "Sport Elite",
+            description: "Este balón garantiza un control preciso y una durabilidad excepcional.",
+            price: "145.000",
+        },
+        {
+            image: Producto7,
+            name: "Guantes para boxeo",
+            brand: "Sport Elite",
+            description: "Fabricados con capas de acolchado avanzado y materiales de primera calidad.",
+            price: "325.000",
+        },
+        {
+            image: Producto8,
+            name: "Raqueta para tenis",
+            brand: "Sport Elite",
+            description: " Construida con materiales de vanguardia como grafito y compuestos de alta tecnología.",
+            price: "395.000",
         }
     ];
 
