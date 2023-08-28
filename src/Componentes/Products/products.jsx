@@ -91,7 +91,7 @@ export default function Products() {
 
             {productShow < products.length && (
 
-                <div className="btn-2" id="load-more" onClick={() => setProductsShow(productShow + 3)}>
+                <div className="btn-2" id="load-more" onClick={() => setProductsShow(productShow + 4)}>
                     Cargar Más
                 </div>)}
         </section>
