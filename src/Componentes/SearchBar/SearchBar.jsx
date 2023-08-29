@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
 
-function SearchBar() {
+export default function SearchBar() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearchChange = (event) => {
@@ -15,6 +15,7 @@ function SearchBar() {
   };
 
   return (
+    <section className='search-container'>
     <div className="search-bar">
       <form onSubmit={handleSearchSubmit}>
         <input
@@ -26,7 +27,6 @@ function SearchBar() {
         <button type="submit">Buscar</button>
       </form>
     </div>
+    </section>
   );
 }
-
-export default SearchBar;
