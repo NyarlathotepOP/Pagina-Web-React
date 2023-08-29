@@ -62,9 +62,27 @@ export default function Footer() {
           >
             <img src={FacebookIcon} alt="Facebook" />
             </a>
+            <a 
+          href="https://www.instagram.com/snoopdogg/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          >
             <img src={InstagramIcon} alt="Instagram" />
+            </a>
+            <a 
+          href="https://web.telegram.org/k/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          >
             <img src={TelegramIcon} alt="Telegram" />
+            </a>
+            <a 
+          href="https://twitter.com/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          >
             <img src={TwitterIcon} alt="Twitter" />
+            </a>
           </div>
         </div>
         <div className="footer-map">
