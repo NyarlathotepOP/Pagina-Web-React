@@ -10,6 +10,10 @@ import Producto7 from '../../Images/GuantesBoxeo.jpg'
 import Producto8 from '../../Images/RaquetaTenis.jpg'
 import Producto9 from '../../Images/camiseta-trail-lurbel-samba-pixel .jpg'
 import Producto10 from '../../Images/lurbel-camiseta-sm-samba-singlet .jpg'
+import Producto11 from '../../Images/dare2b-botella-insulated-bottle .jpg'
+import Producto12 from '../../Images/cebe-cinetik-20-matt-grafite-lime-cbs091.jpg'
+import Producto13 from '../../Images/ledlenser-frontal-ne06r .jpg'
+import Producto14 from '../../Images/salomon-adv-skin-5-mujer .jpg'
 
 export default function Products() {
     const [productShow, setProductsShow] = useState(4);
@@ -84,6 +88,34 @@ export default function Products() {
             description: "Camiseta ergonomia masculina de tirantes Samba de Lurbel.",
             price: "155.000",
         },
+        {
+            image: Producto11,
+            name: "Botella Insulated Bottle",
+            brand: "Sport Elite",
+            description: "Botella de 650 ml, con boquilla, para llevar líquidos sobre la marcha. ",
+            price: "55.000",
+        },
+        {
+            image: Producto12,
+            name: "Cinetik",
+            brand: "Sport Elite",
+            description: "Las CINETIK 2.0 de Cébé son las gafas de sol para hacer deporte y aventuras, que combinan un diseño depurado y colores llamativo.",
+            price: "125.000",
+        },
+        {
+            image: Producto13,
+            name: "Ledlenser Frontal",
+            brand: "Sport Elite",
+            description: "Frontal Ledlenser con 250 lumens.",
+            price: "215.000",
+        }, 
+        {
+            image: Producto14,
+            name: "Chaleco De Trail",
+            brand: "Sport Elite",
+            description: "Chaleco de trail running diseñado para mujer con bidones incluidos",
+            price: "305.000",
+        }
     ];
 
     return (
