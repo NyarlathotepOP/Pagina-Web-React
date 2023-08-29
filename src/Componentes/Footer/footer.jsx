@@ -36,6 +36,7 @@ const footerSections = [
   }
 ];
 
+
 export default function Footer() {
   return (
     <footer className='footer'>
@@ -54,7 +55,13 @@ export default function Footer() {
             </div>
           ))}
           <div className="link">
+          <a 
+          href="https://www.facebook.com/SamsungUS"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          >
             <img src={FacebookIcon} alt="Facebook" />
+            </a>
             <img src={InstagramIcon} alt="Instagram" />
             <img src={TelegramIcon} alt="Telegram" />
             <img src={TwitterIcon} alt="Twitter" />
