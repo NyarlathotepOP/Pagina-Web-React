@@ -8,7 +8,8 @@ import Producto5 from '../../Images/Camiseta azul.jpg'
 import Producto6 from '../../Images/BalonFutbol.jpg'
 import Producto7 from '../../Images/GuantesBoxeo.jpg'
 import Producto8 from '../../Images/RaquetaTenis.jpg'
-
+import Producto9 from '../../Images/camiseta-trail-lurbel-samba-pixel .jpg'
+import Producto10 from '../../Images/lurbel-camiseta-sm-samba-singlet .jpg'
 
 export default function Products() {
     const [productShow, setProductsShow] = useState(4);
@@ -68,7 +69,21 @@ export default function Products() {
             brand: "Sport Elite",
             description: " Construida con materiales de vanguardia como grafito y compuestos de alta tecnología.",
             price: "395.000",
-        }
+        },
+        {
+            image: Producto9,
+            name: "Camiseta De Trai",
+            brand: "Sport Elite",
+            description: " Camiseta de trail con tejido ergonómico ajustable perfectamente a tu cuerpo. Elaborado sin costura en su perímetro con unión en las mangas planas evitand.",
+            price: "195.000",
+        },
+        {
+            image: Producto10,
+            name: "lurbel Camiseta singlet",
+            brand: "Sport Elite",
+            description: "Camiseta ergonomia masculina de tirantes Samba de Lurbel.",
+            price: "155.000",
+        },
     ];
 
     return (
