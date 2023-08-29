@@ -26,8 +26,8 @@ const Register = () => {
           <input type="email" className={styles.input} />
         </div>
         <div className={styles.inputGroup}>
-        <div className={styles.passwordInput}>
         <label className={styles.label}>Contraseña:</label>
+        <div className={styles.passwordInput}>
             <input
               type={password ? "text" : "password"}
               className={styles.input}
@@ -80,8 +80,8 @@ const Register = () => {
           </div>
         </div>
         <div className={styles.inputGroup}>
-        <div className={styles.passwordInput}>
         <label className={styles.label}>Confirmar Contraseña:</label>
+        <div className={styles.passwordInput}>
             <input
               type={confirmPassword ? "text" : "password"}
               className={styles.input}
