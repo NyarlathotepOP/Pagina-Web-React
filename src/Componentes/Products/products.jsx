@@ -14,6 +14,8 @@ import Producto11 from '../../Images/dare2b-botella-insulated-bottle .jpg'
 import Producto12 from '../../Images/cebe-cinetik-20-matt-grafite-lime-cbs091.jpg'
 import Producto13 from '../../Images/ledlenser-frontal-ne06r .jpg'
 import Producto14 from '../../Images/salomon-adv-skin-5-mujer .jpg'
+import Producto15 from '../../Images/Balon Nike.jpg'
+import Producto16 from '../../Images/Balon-Basquetbol.jpg'
 
 export default function Products() {
     const [productShow, setProductsShow] = useState(4);
@@ -115,6 +117,20 @@ export default function Products() {
             brand: "Sport Elite",
             description: "Chaleco de trail running diseñado para mujer con bidones incluidos",
             price: "305.000",
+        },
+        {
+            image: Producto15,
+            name: "Balon Nike",
+            brand: "Sport Elite",
+            description: "BALÓN #NIKE PRESTIGE-FCB. Durabilidad y orgullo por tu equipo",
+            price: "405.000",
+        },
+        {
+            image: Producto16,
+            name: "Balón Basquetbol Baloncesto Molten Original Pvc Gh7x",
+            brand: "Sport Elite",
+            description: "Balón basquetbol basketball baloncesto molten bgh7x original, cuero sintetico pvc 12 paneles.",
+            price: "365.000",
         }
     ];
 
