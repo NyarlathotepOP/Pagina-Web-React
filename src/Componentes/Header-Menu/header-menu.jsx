@@ -18,7 +18,9 @@ export default function Header() {
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="https://www.google.com/maps/@6.245543,-75.559242,13z?hl=es&entry=ttu"
+            rel="nofollow nooperner noreferrer"
+            target="_blank">Contacto</a></li>
           </ul>
         </nav>
       </div>
