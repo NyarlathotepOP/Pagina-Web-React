@@ -1,11 +1,9 @@
-import React from 'react'
-
-const Login = () => {
+export default function Login () {
   return (
     <div>
-      THIS IS LOGIN!
+        <div>
+            <h1>INCIO DE SESIÓN</h1>
+        </div>
     </div>
   )
-}
-
-export default Login
+} 
