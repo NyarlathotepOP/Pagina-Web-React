@@ -62,7 +62,13 @@ export default function Footer() {
           >
             <img src={FacebookIcon} alt="Facebook" />
             </a>
+            <a 
+          href="https://www.instagram.com/snoopdogg/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          >
             <img src={InstagramIcon} alt="Instagram" />
+            </a>
             <img src={TelegramIcon} alt="Telegram" />
             <img src={TwitterIcon} alt="Twitter" />
           </div>
