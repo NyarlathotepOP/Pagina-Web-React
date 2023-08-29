@@ -1,26 +1,31 @@
+import styles from "./login-style.module.css";
+
 export default function Login() {
   return (
-    <div>
-      <form>
+    <div className={styles.container}>
+      <form className={styles.form}>
         <h2>Iniciar sesión</h2>
-        <div>
+        <div className={styles.inputGroup}>
           <label>Email:</label>
           <input type="email" />
         </div>
-        <div>
+        <div className={styles.inputGroup}>
           <label>Contraseña:</label>
           <input type="password" />
         </div>
-        <button>Iniciar sesión</button>
+        <button className={styles.loginButton}>Iniciar sesión</button>
       </form>
-      <div>
+      <div className={styles.altLogin}>
         <p>O continuar con:</p>
-        <button>
-          <img src="https://cdn.worldvectorlogo.com/logos/google-g-2015.svg" width={30} alt="Google icon" />
+        <button className={styles.googleButton}>
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/google-g-2015.svg"
+            width={30}
+            alt="Google icon"
+          />
           Iniciar sesión con Google
         </button>
       </div>
     </div>
   );
 }
-
