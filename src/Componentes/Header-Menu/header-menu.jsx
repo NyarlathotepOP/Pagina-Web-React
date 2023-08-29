@@ -5,12 +5,12 @@ export default function Header() {
   return (
     <header className='header'>
       <div className="menu container">
-        <a href="#" className="logo">Sport Elite</a>
+        <a href="/" className="logo">Sport Elite</a>
         <label for="menu"></label>
         <nav className="cuentas">
           <ul>
-            <li><a href="inicio.html">Inicio Sesion</a></li>
-            <li><a href="crear">Crear Cuenta</a></li>
+            <li><a href="/login">Inicio Sesion</a></li>
+            <li><a href="/register">Crear Cuenta</a></li>
           </ul>
         </nav>
         <nav className="navbar">
